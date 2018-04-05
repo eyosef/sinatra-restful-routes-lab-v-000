@@ -35,12 +35,11 @@ class ApplicationController < Sinatra::Base
 
   post '/recipes/:id' do
     @recipe = Recipe.find_by(params[:name])
-    binding.pry
     redirect to "/recipes/#{@recipe.id}"
   end
 
   get '/recipes/<%=@recipe.id%>/delete' do
-    @recipe 
+    @recipe
     binding.pry
   end
 
