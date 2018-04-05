@@ -39,7 +39,8 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/recipes/<%=@recipe.id%>/delete' do
-
+    session.clear 
+    binding.pry
     erb :'deleted'
   end
 
