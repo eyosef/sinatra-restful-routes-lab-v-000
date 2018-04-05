@@ -39,7 +39,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/recipes/<%=@recipe.id%>/delete' do
-    
+
     erb :'deleted'
   end
 
