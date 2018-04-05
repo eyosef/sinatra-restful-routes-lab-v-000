@@ -39,7 +39,9 @@ class ApplicationController < Sinatra::Base
     redirect to "/recipes/#{@recipe.id}"
   end
 
-  get '/recipes/<%=@recipe.id%>/delete' do 
+  get '/recipes/<%=@recipe.id%>/delete' do
+    @recipe 
+    binding.pry
   end
 
 end
