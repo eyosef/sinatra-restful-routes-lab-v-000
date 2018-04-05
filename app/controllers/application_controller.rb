@@ -40,7 +40,6 @@ class ApplicationController < Sinatra::Base
 
   get '/recipes/<%=@recipe.id%>/delete' do
 
-    binding.pry
   end
 
 end
