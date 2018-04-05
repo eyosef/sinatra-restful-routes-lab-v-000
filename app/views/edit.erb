@@ -11,8 +11,9 @@
 
   <form  action="/recipes/<%=@recipe.id%>" method="post">
     <input id="hidden" type="hidden" name="_method" value="patch">
-      
-
+      <p><input type="text" name="name"></p>
+      <p><input type="text" name="ingredients"></p>
+    
     <input id="hidden" type="hidden" name="_method" value="edit">
     <input type="submit" value="edit">
   </form>
